@@ -4,13 +4,6 @@
   font-family: "Poppins", sans-serif;
 }
 
-.library-pic {
-  height: 54%;
-  width: 100%;
-  border-top-left-radius: 0.625rem;
-  border-top-right-radius: 0.625rem;
-}
-
 .black-screen {
   height: 54%;
   width: 100%;
@@ -21,57 +14,73 @@
 .card-container {
   background-color: #006d77;
   width: 36vw;
-  height: 98vh;
+  height: 94vh;
   border-radius: 0.625rem;
   display: flex;
   flex-direction: column;
-  align-self: center;
-  margin-top: 0.5rem;
 }
 
-.spot-title {
-  font-size: 1.8rem;
+.bottom-half {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+/* .spot-title {
+  font-size: 100%;
   font-weight: 600;
   margin-top: 1rem;
   margin-left: 2rem;
   margin-bottom: 1rem;
-}
+} */
 
-.location {
-  display: flex;
-  flex-direction: column;
-  align-self: left;
-  height: 100%;
-  overflow: hidden;
-  /* width: 19.5rem; */
-  background-color: #1b808a;
-  margin-left: 2rem;
-  margin-right: 2rem;
-  margin-bottom: 1rem;
-  border-radius: 0.625rem;
-}
-
-.location-library {
-  max-height: 100%;
-  border-bottom-left-radius: 0.625rem;
-  border-bottom-right-radius: 0.625rem;
-}
-
-.opening-hours-title {
-  font-size: 1.375rem;
-  font-weight: 400;
-}
-
-.location-title {
-  font-size: 1rem;
+.spot-title {
+  margin-top: 1.2rem;
+  text-align: justify;
+  font-size: 1.4rem;
   font-weight: 600;
-  margin-left: 0.8rem;
-  padding: 0.5rem 0;
+  margin-bottom: 1rem;
 }
 
-.corner-wrapper {
-  overflow: hidden;
-  border-bottom-left-radius: 0.625rem;
-  border-bottom-right-radius: 0.625rem;
+.spot-title::after {
+  content: "";
+  display: inline-block;
+  width: 100%;
+}
+
+.id {
+  font-size: 1.2rem;
+  margin-bottom: 1.2rem;
+}
+
+.hours {
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-decoration: underline;
+  margin-bottom: 2.4rem;
+}
+
+.directions a button {
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 0.4rem 1.8rem;
+  border-radius: 0.4rem;
   border: none;
+  background-color: #1b808a;
+  box-shadow: 0 2px 2px #00000065;
+  transition: 0.3s;
+}
+
+.directions a button:hover {
+  cursor: pointer;
+  background-color: #145b62;
+  transition: ease-in-out 0.4s;
+}
+
+.directions a button:active {
+  cursor: pointer;
+  /* background-color: #197179; */
+  /* box-shadow: inset 0 -2px 2px #00000065; */
+  box-shadow: none;
 }

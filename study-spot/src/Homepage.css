@@ -23,9 +23,16 @@ hr {
   margin-bottom: 1.875rem;
 }
 
+.social-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .homepage-container {
   display: flex;
   justify-content: space-around;
+  align-items: center;
 }
 
 .homepage-left {
@@ -79,4 +86,18 @@ hr {
   align-items: center;
   justify-content: center;
   gap: 1.25rem;
+}
+
+@media (max-width: 600px) {
+  .homepage-container {
+    flex-direction: column;
+  }
+
+  .description {
+    display: none;
+  }
+
+  .socials {
+    /* display: none; */
+  }
 }

@@ -31,20 +31,28 @@ function Homepage() {
             <button onClick={handleNewLocation} className="spot-button">
               Find a Spot
             </button>
-            <hr />
           </div>
-
-          <div className="socials">
-            <a href="www.linkedin.com/in/samuel-mebrahtu">
-              <img className="linkedin" src={LinkedIn} alt="linkedin logo" />
-            </a>
-            <a href="www.github.com/samuelmebrahtu">
-              <img src={GitHub} alt="github logo" />
-            </a>
+          <div className="social-block">
+            <hr />
+            <div className="socials">
+              <a href="https://www.linkedin.com/in/samuel-mebrahtu">
+                <img className="linkedin" src={LinkedIn} alt="linkedin logo" />
+              </a>
+              <a href="https://www.github.com/samuelmebrahtu">
+                <img src={GitHub} alt="github logo" />
+              </a>
+            </div>
           </div>
         </div>
 
-        <SpotCard name={location.name} map={location.map} />
+        <div className="spot-card">
+          <SpotCard
+            name={location.name}
+            id={location.id}
+            hours={location.hours}
+            directions={location.directions}
+          />
+        </div>
       </div>
     </>
   );
