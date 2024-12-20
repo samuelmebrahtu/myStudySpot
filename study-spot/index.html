@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>myStudySpot</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="styles.css" />
+    <script defer src="main.js" type="module"></script>
+    <script defer src="my_jquery.js" type="text\javascript"></script>
+    <script
+      defer
+      src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+    ></script>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="container-left">
+        <div class="instructions">
+          <h1>myStudySpot</h1>
+          <span class="description"
+            >Press the button below to decide where to study next at the
+            University of Birmingham!</span
+          >
+          <div class="mobile-cardDiv"></div>
+          <button class="spot-btn">Find a Spot</button>
+        </div>
+        <hr />
+        <div class="socials">
+          <a href="https://www.linkedin.com/in/samuel-mebrahtu"
+            ><img src="assets/linkedin logo.svg" alt="linkedin logo"
+          /></a>
+          <a href="https://www.github.com/samuelmebrahtu"
+            ><img src="assets/github logo.svg" alt="github logo"
+          /></a>
+        </div>
+      </div>
+      <div class="container-right">
+        <div class="spot-card">
+          <div class="carousel" data-carousel>
+            <button class="carousel-button left" data-carousel-button="left">
+              <img src="assets/left.svg" />
+            </button>
+            <button class="carousel-button right" data-carousel-button="right">
+              <img src="assets/right.svg" />
+            </button>
+            <ul data-slides>
+              <li class="slide" data-active>
+                <img src="assets/car1.jpg" alt="car1" />
+              </li>
+              <li class="slide">
+                <img src="assets/car2.jpg" alt="car2" />
+              </li>
+              <li class="slide">
+                <img src="assets/car3.jpg" alt="car3" />
+              </li>
+              <li class="slide">
+                <img src="assets/car4.jpg" alt="car4" />
+              </li>
+            </ul>
+          </div>
+          <div class="spot-info">
+            <div class="info-lines">
+              <h2 class="spot-title">Library</h2>
+              <span class="id">Requires ID <span class="symbol">✅</span></span>
+              <span class="hours">Click to see opening hours</span>
+              <a
+                class="directions-link"
+                href="https://maps.app.goo.gl/W1KWmM1gqfdwjQRn6"
+                ><button class="directions-btn">Directions</button></a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <dialog data-modal class="modal">
+      <div class="within-modal">
+        <h3>Opening hours</h3>
+        <div class="content">
+          <div class="days">
+            <span>Monday</span>
+            <span>Tuesday</span>
+            <span>Wednesday</span>
+            <span>Thursday</span>
+            <span>Friday</span>
+            <span>Saturday</span>
+            <span>Sunday</span>
+          </div>
+          <div class="times">
+            <span>08:00 - 22:00</span>
+            <span>08:00 - 22:00</span>
+            <span>08:00 - 22:00</span>
+            <span>08:00 - 22:00</span>
+            <span>08:00 - 22:00</span>
+            <span>08:00 - 22:00</span>
+            <span>08:00 - 22:00</span>
+          </div>
+        </div>
+        <button data-close-modal class="close-modal-btn">Close</button>
+      </div>
+    </dialog>
+    <!-- <dialog data-modal class="modal">
+      <h4>Opening hours</h4>
+      <span>Example</span>
+      <button data-close-modal>Close</button>
+    </dialog> -->
+  </body>
+</html>
