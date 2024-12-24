@@ -1,6 +1,6 @@
 ﻿# myStudySpot
 
-**myStudySpot** is a simple web app for students who get bored of studying at the same old spots on the University of Birmingham campus.
+**myStudySpot** is a simple web app for students who get bored of studying at the same old spots on the University of Birmingham campus.\
 Feel free to give it a try [here](https://admirable-paletas-0c5605.netlify.app/)
 * With the click of a button, users can discover new places to study or work.
 * The app provides the name of each spot, pictures, and directions to help users find their way.
